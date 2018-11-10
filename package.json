@@ -1,20 +1,28 @@
 {
   "name": "sy-styleguide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Styleguide and test for the new TGDS schoolyard",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "node-sass": "^4.10.0",
     "react": "16.6.1",
     "react-dom": "16.6.1",
-    "react-scripts": "2.1.1"
+    "react-ions": "5.1.29-rc.1",
+    "react-scripts": "2.1.1",
+    "styled-components": "4.0.3"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=4444 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
