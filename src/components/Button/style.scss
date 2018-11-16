@@ -1,0 +1,194 @@
+@import '../../styles/common/mixins';
+@import '../../styles/common/colors';
+@import '../../styles/common/screen';
+
+.btn {
+  @include vertical-align('inline');
+  @include button-context($primary-1, $white);
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1em;
+  margin-right: 12px;
+  padding: 8px;
+  text-decoration: none;
+  transform: translateY(0);
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  svg {
+    fill: $white;
+  }
+  
+  em {
+    align-items: center;
+    display: flex;
+    font-style: normal;
+  }
+
+  &.loading > em,
+  &.loading + svg {
+    opacity: 0;
+  }
+
+  &.fill {
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+
+    em {
+      // This is not needed for any browser except for Safari 10 and below (on fill items)
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+  // Button size(s)
+  &.lg  {
+    padding: 11px 8px;
+    position: relative;
+  }
+
+  // Button types
+  &.success {
+    @include button-context($green, $white);
+  }
+
+  &.danger {
+    @include button-context($danger, $white);
+  }
+
+  &.warning {
+    @include button-context($warning, $white);
+  }
+
+  &.danger-alt {
+    @include button-context(transparent, $danger);
+  }
+
+  &.flat {
+    @include button-context($neutral-2, $neutral-4);
+  }
+
+  &.info {
+    @include button-context($neutral-4, $white);
+  }
+
+  &.secondary {
+    @include button-context($white, $primary-4);
+    border: 1px solid $neutral-3;
+  }
+
+  &.plain {
+    @include button-context(transparent, $primary-4);
+    font-weight: normal;
+  }
+
+  &.plain-light {
+    @include button-context(transparent, lighten($primary-4, 40%));
+  }
+
+  &.inverted {
+    @include button-context($white, $primary-1);
+  }
+
+  // To handle inline icons
+  svg + span,
+  span + svg {
+    margin-left: 6px;
+  }
+
+  @media #{$media-small-minus} {
+    &.collapse {
+      span, em > span {
+        display: none;
+      }
+      svg {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.confirmation-wrapper {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.confirmation-overlay {
+  background-color: $white;
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: calc(100% + 10px);
+  padding: 8px;
+  transition: opacity .25s ease;
+  width: 160px;
+  z-index: 1;
+
+  &.wide {
+    width: 200px;
+  }
+
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .confirmation-text {
+    font-size: 14px;
+    font-weight: 200;
+    color: #233040;
+    margin: 8px 8px 24px 8px;
+    display: block;
+  }
+
+  .confirmation-approve-btn {
+    padding: 0 16px;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    > button {
+      position: relative;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  > em {
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent $white transparent;
+    content: '';
+    display: inline-block;
+    filter: drop-shadow(0px -1px 1px rgba(0, 0, 0, .2));
+    position: absolute;
+    top: -5px;
+
+    &:after {
+      background-color: $white;
+      content: '';
+      display: block;
+      height: .5px;
+      position: absolute;
+      left: -5.4px;
+      top: 5px;
+      width: 10px;
+    }
+  }
+}
