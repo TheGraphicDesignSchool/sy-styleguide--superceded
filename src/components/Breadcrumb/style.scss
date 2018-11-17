@@ -1,0 +1,97 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/mixins';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/screen';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/functions';
+
+.breadcrumbs-outer {
+  position: relative;
+  min-width: 0; // https://css-tricks.com/flexbox-truncated-text/
+
+  .overflow-gradient {
+    display: none;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: 0;
+    width: 24px;
+    z-index: 2;
+
+    @media #{$media-small-minus} {
+      display: block;
+    }
+  }
+}
+
+.breadcrumbs-container {
+  display: block;
+
+  @media #{$media-small-minus} {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
+
+.breadcrumb {
+  @include vertical-align('inline');
+  height: 65px;
+  padding: 0;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+
+  .primary {
+    display: inline-block;
+    font-weight: 200;
+    font-size: 20px;
+  }
+
+  .secondary {
+    color: $base-text;
+    font-size: 14px;
+    font-style: normal;
+    position: relative;
+  }
+
+  .md-chevron-right {
+    margin: 0 6px;
+    min-width: 14px;
+    fill-opacity: 0.5;
+  }
+
+  @media #{$media-small-minus} {
+    height: 50px;
+  }
+
+  span, a {
+    opacity: 0.8;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+
+  em {
+    align-items: center;
+    display: flex;
+
+    > span {
+      color: $primary-4;
+      font-size: 14px;
+      font-style: normal;
+      position: relative;
+    }
+
+    &:last-child span {
+      opacity: 1;
+    }
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+}

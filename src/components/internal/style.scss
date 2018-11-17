@@ -1,0 +1,33 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+
+.taglist {
+  box-sizing: border-box;
+  color: $navy-text;
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+
+  .text {
+    margin-right: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  > li {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    + li {
+      border-top: 1px solid $neutral-3;
+    }
+  }
+
+  svg {
+    cursor: pointer;
+    user-select: none;
+    min-width: 12px;
+  }
+}

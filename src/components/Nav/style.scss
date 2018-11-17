@@ -1,0 +1,73 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/mixins';
+
+.nav {
+  overflow: auto;
+  height: calc(100% - 65px);
+
+  ul {
+    font-weight: 200;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul ul {
+    font-weight: normal;
+    height: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  li a {
+    @include vertical-align('inline');
+    color: $sky-text;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    padding: 20px 15px;
+    text-decoration: none;
+
+    &.active {
+      color: $white;
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  li.active {
+    background-color: $primary-5;
+
+    ul {
+      display: block;
+    }
+  }
+
+  ul.indent li a {
+    padding-left: 48px;
+  }
+
+  li li a {
+    color: $sky-text;
+    padding: 10px 15px;
+    font-size: 14px;
+
+    &.active {
+      background-color: lighten($primary-5, 5%);
+      color: $sky-text;
+    }
+  }
+
+  a.active + ul {
+    background-color: $primary-5;
+    height: auto;
+    max-height: 1500px;
+    opacity: 1;
+    transition: all 700ms ease-in-out;
+  }
+
+}

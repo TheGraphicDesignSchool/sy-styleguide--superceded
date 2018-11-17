@@ -1,0 +1,101 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+
+.sortable-list-container {
+  position: relative;
+}
+
+.sortable-list {
+  display: block;
+}
+
+.sortable-item {
+  border-top: 1px solid $neutral-1;
+  border-bottom: 1px solid $neutral-1;
+  padding: 0;
+  margin-bottom: 0;
+  color: $navy-text;
+  background-color: $white;
+  position: relative;
+  display: flex;
+  min-height: 40px;
+  height: 40px;
+  font-size: 15px;
+  align-items: center;
+  box-sizing: border-box;
+  + .sortable-item {
+    margin-top: -1px;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+  .sortable-item-badge {
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    font-size: 14px;
+    margin-right: 20px;
+    transition: all 0.25s ease;
+  }
+  > span {
+    width: calc(100% - 70px);
+    transition: all 0.25s ease;
+  }
+  &.inactive {
+    > span {
+      opacity: 0.3;
+    }
+    .sortable-item-badge {
+      background-color: rgba($navy-text, 0.3);
+      border-color: transparent;
+    }
+  }
+  &:not(.dragging):hover, &.preview {
+    .handle {
+      opacity: 1;
+    }
+  }
+  &.bottom-border {
+    border-bottom: 1px solid $neutral-1;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  .toggle {
+    display: flex;
+    > div > div:first-child {
+      background-color: rgba($navy-text, 0.3);
+    }
+  }
+  .handle {
+    cursor: move;
+    padding: 0 10px;
+    margin-right: -10px;
+    opacity: 0;
+    transition: all 0.25s ease;
+    > span {
+      height: 3px;
+      width: 3px;
+      background-color: $navy-text;
+      display: block;
+      + span {
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+.drag-layer {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

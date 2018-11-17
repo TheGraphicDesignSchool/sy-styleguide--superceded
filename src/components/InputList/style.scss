@@ -1,0 +1,15 @@
+.input-list-wrapper {
+  position: relative;
+
+  .input-list-add-item {
+    cursor: pointer;
+    position: absolute;
+    right: 11px;
+    top: 12px;
+    user-select: none;
+  }
+
+  input {
+    padding-right: 30px;
+  }
+}

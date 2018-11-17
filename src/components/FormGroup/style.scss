@@ -1,0 +1,186 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/mixins';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/screen';
+
+.form-group {
+  h3 {
+    margin: 0 0 10px 0;
+  }
+
+  [class^='button-group'] {
+    display: block;
+    button {
+      height: 39px;
+    }
+  }
+}
+
+.remove-item {
+  position: absolute;
+  right: 0;
+  top: 11px;
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+.fieldset > fieldset {
+  margin-bottom: 16px;
+}
+
+fieldset.row {
+  margin-bottom: 0;
+  padding-right: 20px;
+  position: relative;
+
+  .field {
+    float: left;
+    display: block;
+    margin: 0 16px 16px 0;
+    min-width: auto;
+
+    @media #{$media-small-minus} {
+      margin: 0;
+      min-width: 100%;
+    }
+  }
+
+  @media #{$media-small-minus} {
+    padding-right: 0;
+    margin-bottom: 16px;
+
+    [class^='button-group'] {
+      margin-bottom: 16px;
+    }
+
+    .remove-item {
+      right: 12px;
+      top: 64px;
+    }
+
+    .fields {
+      padding-right: 40px;
+
+      [class*='datepicker-component-'] {
+        > div + div {
+          margin: -1px 0 0;
+        }
+        > div:first-of-type > div {
+          border-radius: 3px 3px 0 0;
+        }
+        > div:nth-of-type(2), > div:last-of-type {
+          > div {
+            border-radius: 0;
+          }
+        }
+      }
+      > .field {
+        > div, > input {
+          border-radius: 3px 3px 0 0;
+        }
+        + .field {
+          margin-top: -1px;
+          > div, > input {
+            border-radius: 0;
+          }
+          &[class*='datepicker-component-'] {
+            > div:first-of-type, > div:nth-of-type(2), > div:last-of-type {
+              > div {
+                border-radius: 0;
+              }
+            }
+          }
+          &:last-child {
+            > div, > input {
+              border-radius: 0 0 3px 3px;
+            }
+            &[class*='datepicker-component-'] {
+              > div:first-of-type, > div:nth-of-type(2) {
+                > div {
+                  border-radius: 0;
+                }
+              }
+              > div:last-of-type > div {
+                border-radius: 0 0 3px 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  [class^='selectfield'].field ul {
+    min-width: auto;
+  }
+}
+
+[class^='checkbox'].field {
+  &:last-child {
+    margin-bottom: inherit;
+  }
+}
+
+.fieldset legend {
+  color: $primary-4;
+  display: block;
+  float: left;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 30px 0 10px;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+
+  span {
+    background-color: $white;
+    padding-right: 5px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:after {
+    background-color: $neutral-1;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 7px;
+    width: 100%;
+  }
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+[class*='input-component'] + [class^='has-error__message'],
+[class*='textarea-component'] + [class^='has-error__message'] {
+  position: relative;
+  top: -16px;
+}
+
+.has-error {
+  input, textarea, [class*='selectfield-value'] {
+    border: 2px solid $danger !important;
+  }
+}
+
+.has-error__message {
+  color: $danger;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.validated-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  > * {
+    width: 100%;
+  }
+}

@@ -1,0 +1,57 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/config';
+
+.progress-bar {
+  &.lg {
+    .outer, .inner {
+      height: 18px;
+      border-radius: 18px;
+    }
+    .label {
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+  }
+  &.info .inner {
+    background-color: $neutral-1;
+  }
+  &.success .inner {
+    background-color: $success;
+  }
+  &.warning .inner {
+    background-color: $warning;
+  }
+  &.danger .inner {
+    background-color: $danger;
+  }
+
+  .outer {
+    max-width: 100%;
+    height: 9px;
+    border-radius: 9px;
+    overflow: hidden;
+    position: relative;
+    background-color: $neutral-3;
+  }
+
+  .inner {
+    border-radius: 9px;
+    height: 9px;
+    left: -100%;
+    position: absolute;
+    transition: width .5s $animation-in-out-quadratic;
+    width: 100%;
+  }
+
+  .label {
+    color: $navy-text;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+
+    .percentage {
+      margin-left: 4px;
+      opacity: 0.6;
+    }
+  }
+}

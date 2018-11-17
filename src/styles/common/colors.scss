@@ -1,0 +1,39 @@
+//
+// Colors
+// --------------------------------------------------
+
+// Base Colors
+$white: #fff;
+$black: #000;
+
+// Neutral Colors
+$neutral-1: #ECF0F0;
+$neutral-2: #F7F7F9;
+$neutral-3: #DEE0E3;
+$neutral-4: #9198A0;
+
+// Primary Colors
+$primary-1: #3C97D3;
+$primary-2: #3178B7;
+$primary-3: #1B252F;
+$primary-4: #243140;
+$primary-4_5: #233040;
+$primary-5: #2D3E50;
+$primary-6: #4F6A92;
+
+// Secondary Colors
+$green: #26B894;
+$orange: #F29C1E;
+$red: #E54C3B;
+$aqua: #62CAF3;
+
+// Text Colors
+$base-text: $primary-3 + 40%;
+$navy-text: #233040;
+$sky-text: #C8F0FF;
+
+// Contextual References
+$danger: $red;
+$warning: $orange;
+$success: $green;
+$info: $aqua;

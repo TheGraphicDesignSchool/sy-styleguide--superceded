@@ -1,0 +1,959 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner bounce displays a spinner-bounce class 1`] = `
+<styled.span
+  className=""
+  css={
+    Object {
+      ".ring": Object {
+        "> span": Object {
+          "&:nth-child(1)": Object {
+            "animationDelay": "-0.45s",
+          },
+          "&:nth-child(2)": Object {
+            "animationDelay": "-0.3s",
+          },
+          "&:nth-child(3)": Object {
+            "animationDelay": "-0.15s",
+          },
+          "animation": "iECmZH 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
+          "border": "2px solid #9198A0",
+          "borderColor": "#9198A0 transparent transparent transparent",
+          "borderRadius": "50%",
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "16px",
+          "margin": 0,
+          "position": "absolute",
+          "width": "16px",
+        },
+        "display": "inline-block",
+        "height": "16px",
+        "position": "relative",
+        "width": "16px",
+      },
+      ".spinner-bounce": Object {
+        ".bounce1": Object {
+          "animationDelay": "-0.32s",
+        },
+        ".bounce1, .bounce2, .bounce3": Object {
+          "animation": "ghjfcd 1.4s infinite ease-in-out both",
+          "backgroundColor": "#9198A0",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "12px",
+          "marginRight": "3px",
+          "width": "12px",
+        },
+        ".bounce2": Object {
+          "animationDelay": "-0.16s",
+        },
+        ".bounce3": Object {
+          "marginRight": 0,
+        },
+      },
+      ".spinner-circular": Object {
+        "display": "flex",
+      },
+      ".spinner-dots": Object {
+        ".dot1, .dot2": Object {
+          "animation": "iQfAUB 2.0s infinite ease-in-out",
+          "backgroundColor": "#3C97D3",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "60%",
+          "position": "absolute",
+          "top": 0,
+          "width": "60%",
+        },
+        ".dot2": Object {
+          "animationDelay": "-1.0s",
+          "backgroundColor": "#E54C3B",
+          "bottom": 0,
+          "top": "auto",
+        },
+        "animation": "cZxgpV 2.0s infinite linear",
+        "height": "40px",
+        "position": "relative",
+        "width": "40px",
+      },
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "bottom": 0,
+      "display": "none",
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+>
+  <span
+    className="spinner-bounce"
+  >
+    <span>
+      <span
+        className="bounce1"
+      />
+      <span
+        className="bounce2"
+      />
+      <span
+        className="bounce3"
+      />
+    </span>
+  </span>
+</styled.span>
+`;
+
+exports[`Spinner circular displays a spinner-circular class 1`] = `
+<styled.span
+  className=""
+  css={
+    Object {
+      ".ring": Object {
+        "> span": Object {
+          "&:nth-child(1)": Object {
+            "animationDelay": "-0.45s",
+          },
+          "&:nth-child(2)": Object {
+            "animationDelay": "-0.3s",
+          },
+          "&:nth-child(3)": Object {
+            "animationDelay": "-0.15s",
+          },
+          "animation": "iECmZH 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
+          "border": "2px solid #9198A0",
+          "borderColor": "#9198A0 transparent transparent transparent",
+          "borderRadius": "50%",
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "16px",
+          "margin": 0,
+          "position": "absolute",
+          "width": "16px",
+        },
+        "display": "inline-block",
+        "height": "16px",
+        "position": "relative",
+        "width": "16px",
+      },
+      ".spinner-bounce": Object {
+        ".bounce1": Object {
+          "animationDelay": "-0.32s",
+        },
+        ".bounce1, .bounce2, .bounce3": Object {
+          "animation": "ghjfcd 1.4s infinite ease-in-out both",
+          "backgroundColor": "#9198A0",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "12px",
+          "marginRight": "3px",
+          "width": "12px",
+        },
+        ".bounce2": Object {
+          "animationDelay": "-0.16s",
+        },
+        ".bounce3": Object {
+          "marginRight": 0,
+        },
+      },
+      ".spinner-circular": Object {
+        "display": "flex",
+      },
+      ".spinner-dots": Object {
+        ".dot1, .dot2": Object {
+          "animation": "iQfAUB 2.0s infinite ease-in-out",
+          "backgroundColor": "#3C97D3",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "60%",
+          "position": "absolute",
+          "top": 0,
+          "width": "60%",
+        },
+        ".dot2": Object {
+          "animationDelay": "-1.0s",
+          "backgroundColor": "#E54C3B",
+          "bottom": 0,
+          "top": "auto",
+        },
+        "animation": "cZxgpV 2.0s infinite linear",
+        "height": "40px",
+        "position": "relative",
+        "width": "40px",
+      },
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "bottom": 0,
+      "display": "none",
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+>
+  <span
+    className="spinner-circular"
+  >
+    <span
+      className="ring"
+    >
+      <span />
+      <span />
+      <span />
+      <span />
+    </span>
+  </span>
+</styled.span>
+`;
+
+exports[`Spinner displays an is-hidden class 1`] = `
+<styled.span
+  className=""
+  css={
+    Object {
+      ".ring": Object {
+        "> span": Object {
+          "&:nth-child(1)": Object {
+            "animationDelay": "-0.45s",
+          },
+          "&:nth-child(2)": Object {
+            "animationDelay": "-0.3s",
+          },
+          "&:nth-child(3)": Object {
+            "animationDelay": "-0.15s",
+          },
+          "animation": "iECmZH 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
+          "border": "2px solid #9198A0",
+          "borderColor": "#9198A0 transparent transparent transparent",
+          "borderRadius": "50%",
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "16px",
+          "margin": 0,
+          "position": "absolute",
+          "width": "16px",
+        },
+        "display": "inline-block",
+        "height": "16px",
+        "position": "relative",
+        "width": "16px",
+      },
+      ".spinner-bounce": Object {
+        ".bounce1": Object {
+          "animationDelay": "-0.32s",
+        },
+        ".bounce1, .bounce2, .bounce3": Object {
+          "animation": "ghjfcd 1.4s infinite ease-in-out both",
+          "backgroundColor": "#9198A0",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "12px",
+          "marginRight": "3px",
+          "width": "12px",
+        },
+        ".bounce2": Object {
+          "animationDelay": "-0.16s",
+        },
+        ".bounce3": Object {
+          "marginRight": 0,
+        },
+      },
+      ".spinner-circular": Object {
+        "display": "flex",
+      },
+      ".spinner-dots": Object {
+        ".dot1, .dot2": Object {
+          "animation": "iQfAUB 2.0s infinite ease-in-out",
+          "backgroundColor": "#3C97D3",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "60%",
+          "position": "absolute",
+          "top": 0,
+          "width": "60%",
+        },
+        ".dot2": Object {
+          "animationDelay": "-1.0s",
+          "backgroundColor": "#E54C3B",
+          "bottom": 0,
+          "top": "auto",
+        },
+        "animation": "cZxgpV 2.0s infinite linear",
+        "height": "40px",
+        "position": "relative",
+        "width": "40px",
+      },
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "bottom": 0,
+      "display": "none",
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+>
+  <span
+    className="spinner-bounce"
+  >
+    <span>
+      <span
+        className="bounce1"
+      />
+      <span
+        className="bounce2"
+      />
+      <span
+        className="bounce3"
+      />
+    </span>
+  </span>
+</styled.span>
+`;
+
+exports[`Spinner dots displays a spinner-dots class 1`] = `
+<styled.span
+  className=""
+  css={
+    Object {
+      ".ring": Object {
+        "> span": Object {
+          "&:nth-child(1)": Object {
+            "animationDelay": "-0.45s",
+          },
+          "&:nth-child(2)": Object {
+            "animationDelay": "-0.3s",
+          },
+          "&:nth-child(3)": Object {
+            "animationDelay": "-0.15s",
+          },
+          "animation": "iECmZH 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
+          "border": "2px solid #9198A0",
+          "borderColor": "#9198A0 transparent transparent transparent",
+          "borderRadius": "50%",
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "16px",
+          "margin": 0,
+          "position": "absolute",
+          "width": "16px",
+        },
+        "display": "inline-block",
+        "height": "16px",
+        "position": "relative",
+        "width": "16px",
+      },
+      ".spinner-bounce": Object {
+        ".bounce1": Object {
+          "animationDelay": "-0.32s",
+        },
+        ".bounce1, .bounce2, .bounce3": Object {
+          "animation": "ghjfcd 1.4s infinite ease-in-out both",
+          "backgroundColor": "#9198A0",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "12px",
+          "marginRight": "3px",
+          "width": "12px",
+        },
+        ".bounce2": Object {
+          "animationDelay": "-0.16s",
+        },
+        ".bounce3": Object {
+          "marginRight": 0,
+        },
+      },
+      ".spinner-circular": Object {
+        "display": "flex",
+      },
+      ".spinner-dots": Object {
+        ".dot1, .dot2": Object {
+          "animation": "iQfAUB 2.0s infinite ease-in-out",
+          "backgroundColor": "#3C97D3",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "60%",
+          "position": "absolute",
+          "top": 0,
+          "width": "60%",
+        },
+        ".dot2": Object {
+          "animationDelay": "-1.0s",
+          "backgroundColor": "#E54C3B",
+          "bottom": 0,
+          "top": "auto",
+        },
+        "animation": "cZxgpV 2.0s infinite linear",
+        "height": "40px",
+        "position": "relative",
+        "width": "40px",
+      },
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "bottom": 0,
+      "display": "none",
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+>
+  <span
+    className="spinner-dots"
+  >
+    <span>
+      <span
+        className="dot1"
+      />
+      <span
+        className="dot2"
+      />
+    </span>
+  </span>
+</styled.span>
+`;
+
+exports[`Spinner has an className 1`] = `
+<styled.span
+  className="testing"
+  css={
+    Object {
+      ".ring": Object {
+        "> span": Object {
+          "&:nth-child(1)": Object {
+            "animationDelay": "-0.45s",
+          },
+          "&:nth-child(2)": Object {
+            "animationDelay": "-0.3s",
+          },
+          "&:nth-child(3)": Object {
+            "animationDelay": "-0.15s",
+          },
+          "animation": "iECmZH 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
+          "border": "2px solid #9198A0",
+          "borderColor": "#9198A0 transparent transparent transparent",
+          "borderRadius": "50%",
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "16px",
+          "margin": 0,
+          "position": "absolute",
+          "width": "16px",
+        },
+        "display": "inline-block",
+        "height": "16px",
+        "position": "relative",
+        "width": "16px",
+      },
+      ".spinner-bounce": Object {
+        ".bounce1": Object {
+          "animationDelay": "-0.32s",
+        },
+        ".bounce1, .bounce2, .bounce3": Object {
+          "animation": "ghjfcd 1.4s infinite ease-in-out both",
+          "backgroundColor": "#9198A0",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "12px",
+          "marginRight": "3px",
+          "width": "12px",
+        },
+        ".bounce2": Object {
+          "animationDelay": "-0.16s",
+        },
+        ".bounce3": Object {
+          "marginRight": 0,
+        },
+      },
+      ".spinner-circular": Object {
+        "display": "flex",
+      },
+      ".spinner-dots": Object {
+        ".dot1, .dot2": Object {
+          "animation": "iQfAUB 2.0s infinite ease-in-out",
+          "backgroundColor": "#3C97D3",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "60%",
+          "position": "absolute",
+          "top": 0,
+          "width": "60%",
+        },
+        ".dot2": Object {
+          "animationDelay": "-1.0s",
+          "backgroundColor": "#E54C3B",
+          "bottom": 0,
+          "top": "auto",
+        },
+        "animation": "cZxgpV 2.0s infinite linear",
+        "height": "40px",
+        "position": "relative",
+        "width": "40px",
+      },
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+>
+  <span
+    className="spinner-bounce"
+  >
+    <span>
+      <span
+        className="bounce1"
+      />
+      <span
+        className="bounce2"
+      />
+      <span
+        className="bounce3"
+      />
+    </span>
+  </span>
+</styled.span>
+`;
+
+exports[`Spinner has custom background color 1`] = `
+<styled.span
+  className=""
+  css={
+    Object {
+      ".ring": Object {
+        "> span": Object {
+          "&:nth-child(1)": Object {
+            "animationDelay": "-0.45s",
+          },
+          "&:nth-child(2)": Object {
+            "animationDelay": "-0.3s",
+          },
+          "&:nth-child(3)": Object {
+            "animationDelay": "-0.15s",
+          },
+          "animation": "iECmZH 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
+          "border": "2px solid #3C97D3",
+          "borderColor": "#3C97D3 transparent transparent transparent",
+          "borderRadius": "50%",
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "16px",
+          "margin": 0,
+          "position": "absolute",
+          "width": "16px",
+        },
+        "display": "inline-block",
+        "height": "16px",
+        "position": "relative",
+        "width": "16px",
+      },
+      ".spinner-bounce": Object {
+        ".bounce1": Object {
+          "animationDelay": "-0.32s",
+        },
+        ".bounce1, .bounce2, .bounce3": Object {
+          "animation": "ghjfcd 1.4s infinite ease-in-out both",
+          "backgroundColor": "#3C97D3",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "12px",
+          "marginRight": "3px",
+          "width": "12px",
+        },
+        ".bounce2": Object {
+          "animationDelay": "-0.16s",
+        },
+        ".bounce3": Object {
+          "marginRight": 0,
+        },
+      },
+      ".spinner-circular": Object {
+        "display": "flex",
+      },
+      ".spinner-dots": Object {
+        ".dot1, .dot2": Object {
+          "animation": "iQfAUB 2.0s infinite ease-in-out",
+          "backgroundColor": "#3C97D3",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "60%",
+          "position": "absolute",
+          "top": 0,
+          "width": "60%",
+        },
+        ".dot2": Object {
+          "animationDelay": "-1.0s",
+          "backgroundColor": "#3C97D3",
+          "bottom": 0,
+          "top": "auto",
+        },
+        "animation": "cZxgpV 2.0s infinite linear",
+        "height": "40px",
+        "position": "relative",
+        "width": "40px",
+      },
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+>
+  <span
+    className="spinner-bounce"
+  >
+    <span>
+      <span
+        className="bounce1"
+      />
+      <span
+        className="bounce2"
+      />
+      <span
+        className="bounce3"
+      />
+    </span>
+  </span>
+</styled.span>
+`;
+
+exports[`Spinner with fixed position has a loading class 1`] = `
+<styled.span
+  className=""
+  css={
+    Object {
+      ".ring": Object {
+        "> span": Object {
+          "&:nth-child(1)": Object {
+            "animationDelay": "-0.45s",
+          },
+          "&:nth-child(2)": Object {
+            "animationDelay": "-0.3s",
+          },
+          "&:nth-child(3)": Object {
+            "animationDelay": "-0.15s",
+          },
+          "animation": "iECmZH 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
+          "border": "2px solid #9198A0",
+          "borderColor": "#9198A0 transparent transparent transparent",
+          "borderRadius": "50%",
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "16px",
+          "margin": 0,
+          "position": "absolute",
+          "width": "16px",
+        },
+        "display": "inline-block",
+        "height": "16px",
+        "position": "relative",
+        "width": "16px",
+      },
+      ".spinner-bounce": Object {
+        ".bounce1": Object {
+          "animationDelay": "-0.32s",
+        },
+        ".bounce1, .bounce2, .bounce3": Object {
+          "animation": "ghjfcd 1.4s infinite ease-in-out both",
+          "backgroundColor": "#9198A0",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "12px",
+          "marginRight": "3px",
+          "width": "12px",
+        },
+        ".bounce2": Object {
+          "animationDelay": "-0.16s",
+        },
+        ".bounce3": Object {
+          "marginRight": 0,
+        },
+      },
+      ".spinner-circular": Object {
+        "display": "flex",
+      },
+      ".spinner-dots": Object {
+        ".dot1, .dot2": Object {
+          "animation": "iQfAUB 2.0s infinite ease-in-out",
+          "backgroundColor": "#3C97D3",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "60%",
+          "position": "absolute",
+          "top": 0,
+          "width": "60%",
+        },
+        ".dot2": Object {
+          "animationDelay": "-1.0s",
+          "backgroundColor": "#E54C3B",
+          "bottom": 0,
+          "top": "auto",
+        },
+        "animation": "cZxgpV 2.0s infinite linear",
+        "height": "40px",
+        "position": "relative",
+        "width": "40px",
+      },
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+      "zIndex": 4000,
+    }
+  }
+>
+  <span
+    className="spinner-bounce"
+  >
+    <span>
+      <span
+        className="bounce1"
+      />
+      <span
+        className="bounce2"
+      />
+      <span
+        className="bounce3"
+      />
+    </span>
+  </span>
+</styled.span>
+`;
+
+exports[`Spinner with inline position has a loading class 1`] = `
+<styled.span
+  className=""
+  css={
+    Object {
+      ".ring": Object {
+        "> span": Object {
+          "&:nth-child(1)": Object {
+            "animationDelay": "-0.45s",
+          },
+          "&:nth-child(2)": Object {
+            "animationDelay": "-0.3s",
+          },
+          "&:nth-child(3)": Object {
+            "animationDelay": "-0.15s",
+          },
+          "animation": "iECmZH 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
+          "border": "2px solid #9198A0",
+          "borderColor": "#9198A0 transparent transparent transparent",
+          "borderRadius": "50%",
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "16px",
+          "margin": 0,
+          "position": "absolute",
+          "width": "16px",
+        },
+        "display": "inline-block",
+        "height": "16px",
+        "position": "relative",
+        "width": "16px",
+      },
+      ".spinner-bounce": Object {
+        ".bounce1": Object {
+          "animationDelay": "-0.32s",
+        },
+        ".bounce1, .bounce2, .bounce3": Object {
+          "animation": "ghjfcd 1.4s infinite ease-in-out both",
+          "backgroundColor": "#9198A0",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "12px",
+          "marginRight": "3px",
+          "width": "12px",
+        },
+        ".bounce2": Object {
+          "animationDelay": "-0.16s",
+        },
+        ".bounce3": Object {
+          "marginRight": 0,
+        },
+      },
+      ".spinner-circular": Object {
+        "display": "flex",
+      },
+      ".spinner-dots": Object {
+        ".dot1, .dot2": Object {
+          "animation": "iQfAUB 2.0s infinite ease-in-out",
+          "backgroundColor": "#3C97D3",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "60%",
+          "position": "absolute",
+          "top": 0,
+          "width": "60%",
+        },
+        ".dot2": Object {
+          "animationDelay": "-1.0s",
+          "backgroundColor": "#E54C3B",
+          "bottom": 0,
+          "top": "auto",
+        },
+        "animation": "cZxgpV 2.0s infinite linear",
+        "height": "40px",
+        "position": "relative",
+        "width": "40px",
+      },
+      "backgroundColor": "#fff",
+      "display": "inline-flex",
+    }
+  }
+>
+  <span
+    className="spinner-bounce"
+  >
+    <span>
+      <span
+        className="bounce1"
+      />
+      <span
+        className="bounce2"
+      />
+      <span
+        className="bounce3"
+      />
+    </span>
+  </span>
+</styled.span>
+`;
+
+exports[`Spinner with loading true has a loading class 1`] = `
+<styled.span
+  className=""
+  css={
+    Object {
+      ".ring": Object {
+        "> span": Object {
+          "&:nth-child(1)": Object {
+            "animationDelay": "-0.45s",
+          },
+          "&:nth-child(2)": Object {
+            "animationDelay": "-0.3s",
+          },
+          "&:nth-child(3)": Object {
+            "animationDelay": "-0.15s",
+          },
+          "animation": "iECmZH 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite",
+          "border": "2px solid #9198A0",
+          "borderColor": "#9198A0 transparent transparent transparent",
+          "borderRadius": "50%",
+          "boxSizing": "border-box",
+          "display": "block",
+          "height": "16px",
+          "margin": 0,
+          "position": "absolute",
+          "width": "16px",
+        },
+        "display": "inline-block",
+        "height": "16px",
+        "position": "relative",
+        "width": "16px",
+      },
+      ".spinner-bounce": Object {
+        ".bounce1": Object {
+          "animationDelay": "-0.32s",
+        },
+        ".bounce1, .bounce2, .bounce3": Object {
+          "animation": "ghjfcd 1.4s infinite ease-in-out both",
+          "backgroundColor": "#9198A0",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "12px",
+          "marginRight": "3px",
+          "width": "12px",
+        },
+        ".bounce2": Object {
+          "animationDelay": "-0.16s",
+        },
+        ".bounce3": Object {
+          "marginRight": 0,
+        },
+      },
+      ".spinner-circular": Object {
+        "display": "flex",
+      },
+      ".spinner-dots": Object {
+        ".dot1, .dot2": Object {
+          "animation": "iQfAUB 2.0s infinite ease-in-out",
+          "backgroundColor": "#3C97D3",
+          "borderRadius": "100%",
+          "display": "inline-block",
+          "height": "60%",
+          "position": "absolute",
+          "top": 0,
+          "width": "60%",
+        },
+        ".dot2": Object {
+          "animationDelay": "-1.0s",
+          "backgroundColor": "#E54C3B",
+          "bottom": 0,
+          "top": "auto",
+        },
+        "animation": "cZxgpV 2.0s infinite linear",
+        "height": "40px",
+        "position": "relative",
+        "width": "40px",
+      },
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "bottom": 0,
+      "display": "flex",
+      "justifyContent": "center",
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "top": 0,
+      "zIndex": 1000,
+    }
+  }
+>
+  <span
+    className="spinner-bounce"
+  >
+    <span>
+      <span
+        className="bounce1"
+      />
+      <span
+        className="bounce2"
+      />
+      <span
+        className="bounce3"
+      />
+    </span>
+  </span>
+</styled.span>
+`;

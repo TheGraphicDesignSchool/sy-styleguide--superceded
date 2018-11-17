@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./components/Button";
-import Icon from "./components/Icon";
+import Button from "./components/Button/Button";
+import Icon from "./components/Icon/Icon";
 
 export default () => {
   return (
@@ -29,7 +29,6 @@ export default () => {
 
       <hr />
 
-      <ExampleBottomPopover />
     </div>
   );
 };

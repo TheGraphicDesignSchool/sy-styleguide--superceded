@@ -1,0 +1,62 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/screen';
+
+.textarea-component {
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $navy-text;
+    font-weight: 200;
+  }
+
+  textarea {
+    color: $primary-4;
+    border: solid 2px $neutral-3;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    transition: border-color ease-in-out .15s;
+
+    @media #{$media-small-minus} {
+      min-width: 240px;
+    }
+
+    &:hover {
+      border-color: rgba($neutral-4, .4);
+    }
+
+    &:focus {
+      border-color: rgba($neutral-4, .6);
+      outline: 0;
+    }
+  }
+
+  &.textarea-error {
+    textarea {
+      border: 2px solid $danger;
+
+      &:focus {
+        box-shadow: 0 0 2px $danger;
+      }
+    }
+  }
+
+  &.textarea-disabled {
+    cursor: not-allowed;
+
+    textarea {
+      background-color: rgba($neutral-3, .6);
+      cursor: not-allowed;
+
+      &:hover {
+        border: solid 2px $neutral-3;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,97 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+
+.chip-wrapper {
+  background-color: $neutral-4;
+  border-radius: 2px;
+  color: $primary-4;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 3px 12px;
+
+  span {
+    line-height: 1.6;
+    position: relative;
+  }
+
+  &.larger {
+    font-size: 14px;
+  }
+
+  &.smaller {
+    font-size: 10px;
+    font-weight: 200;
+    padding: 5px 8px 3px;
+    text-transform: uppercase;
+  }
+
+  &.primary, &.primary-1 {
+    background-color: $primary-1;
+    color: $white;
+  }
+
+  &.primary-2 {
+    background-color: $primary-2;
+    color: $white;
+  }
+
+  &.primary-3 {
+    background-color: $primary-3;
+    color: $white;
+  }
+
+  &.primary-4 {
+    background-color: $primary-4;
+    color: $white;
+  }
+
+  &.primary-5 {
+    background-color: $primary-5;
+    color: $white;
+  }
+
+  &.primary-darker, &.primary-6 {
+    background-color: $primary-6;
+    color: $white;
+  }
+
+  &.neutral-1 {
+    background-color: $neutral-1;
+  }
+
+  &.neutral-2 {
+    background-color: $neutral-2;
+  }
+
+  &.neutral-3 {
+    background-color: $neutral-3;
+  }
+
+  &.neutral-4 {
+    background-color: $neutral-4;
+  }
+
+  &.danger {
+    background-color: $danger;
+    color: $white;
+  }
+
+  &.success {
+    background-color: $success;
+    color: $white;
+  }
+
+  &.warning {
+    background-color: $warning;
+    color: $white;
+  }
+
+  &.info {
+    background-color: $info;
+    color: $white;
+  }
+
+  &.is-actionable {
+    cursor: pointer;
+  }
+}

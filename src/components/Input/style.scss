@@ -1,0 +1,92 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/screen';
+
+.input-component {
+  position: relative;
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $navy-text;
+    font-weight: 200;
+  }
+
+  .input-container {
+    align-items: center;
+    display: flex;
+    position: relative;
+
+    .flex-wrapper {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      line-height: 0;
+      position: absolute;
+      top: 0; // for IE 11 :)
+
+      &.suffix {
+        // compensates for the 16px margin added below
+        right: -16px;
+      }
+    }
+
+    .prefix, .suffix {
+      color: $primary-4;
+    }
+
+    .prefix {
+      margin-left: 16px;
+    }
+
+    .suffix {
+      margin-right: 16px;
+    }
+
+    input {
+      color: $primary-4;
+      border: solid 2px $neutral-3;
+      border-radius: 3px;
+      box-sizing: border-box;
+      font-size: 14px;
+      padding: 10px;
+      width: 100%;
+      transition: border-color ease-in-out .15s;
+
+      &:disabled {
+        background-color: rgba($neutral-3, .6);
+        cursor: not-allowed;
+
+        &:hover {
+          border: solid 2px $neutral-3;
+        }
+      }
+
+      &.fill {
+        width: 100%;
+      }
+    }
+  }
+
+  &.input-error {
+    input {
+      border: 2px solid $danger;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  &:not(.input-error) {
+    input:hover {
+      border-color: rgba($neutral-4, .4);
+    }
+
+    input:focus {
+      border-color: rgba($neutral-4, .6);
+      outline: 0;
+    }
+  }
+
+}

@@ -1,0 +1,80 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/functions';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/mixins';
+
+.tip-wrapper {
+  border-radius: 3px;
+  background-color: $primary-3;
+  color: $white;
+  left: -300px;
+  line-height: 1.4em;
+  max-width: 160px;
+  opacity: 0;
+  padding: 10px 13px;
+  position: absolute;
+  text-align: center;
+  top: -300px;
+  transition: opacity 400ms cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  @include word-wrap;
+  z-index: z('tooltip');
+
+  &.is-visible {
+    opacity: 0.9;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  &.top {
+    transform: translateX(-50%) translateX(0) translateY(-100%) translateY(-6px);
+
+    &:before {
+      border-width: 6px 6px 0;
+      border-color: $primary-3 transparent transparent;
+      left: 50%;
+      bottom: -6px;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &.bottom {
+    transform: translate(-50%, 6px);
+
+    &:before {
+      border-width: 0 6px 6px;
+      border-color: transparent transparent $primary-3;
+      left: 50%;
+      top: -6px;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &.left {
+    transform: translateX(-100%) translateX(-8px) translateY(-50%) translateY(0);
+
+    &:before {
+      border-width: 6px 0 6px 6px;
+      border-color: transparent transparent transparent $primary-3;
+      right: -6px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &.right {
+    transform: translate(8px, -50%);
+
+    &:before {
+      border-width: 6px 6px 6px 0;
+      border-color: transparent $primary-3 transparent transparent;
+      left: -6px;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+}

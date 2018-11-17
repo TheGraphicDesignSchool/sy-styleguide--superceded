@@ -1,0 +1,158 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/screen';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/mixins';
+
+.selectfield-component {
+  display: inline-block;
+  position: relative;
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $navy-text;
+    font-weight: 200;
+  }
+
+  .selectfield-value {
+    align-items: center;
+    background-color: $white;
+    border: 2px solid $neutral-3;
+    border-radius: 3px;
+    color: $primary-4;
+    cursor: pointer;
+    background: $white;
+    display: flex;
+    position: relative;
+    padding: 10px;
+    justify-content: space-between;
+    user-select: none;
+    transition: border-color ease-in-out .15s;
+
+    > svg:last-of-type {
+      transform: rotate(0);
+    }
+
+    > .icon {
+      padding-right: 8px;
+    }
+
+    &:hover {
+      border-color: rgba($neutral-4, .4);
+    }
+
+    &:focus {
+      border-color: rgba($neutral-4, .6);
+      outline: 0;
+    }
+  }
+
+  .display-text {
+    display: block;
+    overflow: hidden;
+    padding-right: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  ul {
+    background-color: $white;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    left: 0;
+    margin: 3px 0 30px;
+    overflow: auto;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    max-height: 152px;
+    z-index: 3;
+
+    li {
+      @include vertical-align('block');
+      color: $primary-4;
+      cursor: pointer;
+      display: flex;
+      padding: 10px;
+      text-decoration: none;
+      min-height: 18px;
+
+      svg {
+        margin-right: 10px;
+      }
+
+      &:not(.not-clickable):hover {
+        svg {
+          fill: $white;
+        }
+        background-color: $primary-1;
+        color: $white;
+      }
+
+      &.not-clickable {
+        cursor: default;
+      }
+
+      &.hidden {
+        display: none;
+      }
+    }
+
+    @media #{$media-small-minus} {
+      left: 0;
+      min-width: 100%;
+    }
+  }
+
+  &.selectfield-disabled {
+    cursor: not-allowed;
+
+    > div {
+      background-color: rgba($neutral-3, .6);
+      border-color: $neutral-3;
+      color: rgba($primary-4, 0.5);
+      cursor: not-allowed;
+
+      > svg {
+        fill: $neutral-4;
+      }
+    }
+
+    > ul {
+      display: none;
+    }
+
+    &:hover .selectfield-value {
+      border-color: $neutral-3;
+    }
+  }
+
+  &.selectfield-error {
+    > div {
+      border-color: $danger;
+    }
+  }
+
+  &.active:not(.selectfield-disabled) {
+    .selectfield-value {
+      border-color: rgba($neutral-4, .6);
+
+      > svg:last-of-type {
+        transform: rotate(180deg);
+      }
+    }
+    ul {
+      display: inline-block;
+    }
+  }
+
+  &.fill {
+    width: 100%;
+  }
+
+  @media #{$media-small-minus} {
+    min-width: 100%;
+  }
+}

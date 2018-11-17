@@ -1,0 +1,27 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+
+.avatar-wrapper {
+  flex-shrink: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  transition: opacity .25s ease-in;
+
+  &.loaded {
+    opacity: 1;
+  }
+
+  > div {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+
+    span {
+      color: $white;
+      position: relative;
+      text-transform: uppercase;
+      top: 2%;
+    }
+  }
+}

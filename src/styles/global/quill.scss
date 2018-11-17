@@ -1,0 +1,45 @@
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.snow.css';
+@import '../common/colors.scss';
+@import '../common/functions';
+
+// Our theme styles below
+.ql-container.ql-snow {
+  border: none;
+}
+
+.ql-toolbar.ql-snow {
+  border: 1px solid $neutral-3;
+  border-radius: 3px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  > .ql-formats {
+    padding: 6px 8px;
+    margin: 0;
+  }
+  .ql-picker.ql-expanded {
+    .ql-picker-label {
+      border: 1px solid $neutral-3;
+      border-radius: 3px 3px 0 0;
+    }
+    .ql-picker-options {
+      box-shadow: none;
+      border: 1px solid $neutral-3;
+      border-radius: 0 0 3px 3px;
+    }
+  }
+}
+
+.ql-editor {
+  padding: 15px 5px;
+  min-height: 120px;
+  color: $black;
+}
+
+.ql-snow .ql-tooltip {
+  z-index: z('alert');
+  box-shadow: none;
+  border: 1px solid $neutral-3;
+  border-radius: 3px;
+}

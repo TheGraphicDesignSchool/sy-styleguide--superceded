@@ -1,0 +1,14 @@
+$z-layers: (
+  'spinner-fixed': 4000,
+  'modal': 3500,
+  'tooltip': 3625,
+  'alert': 3750,
+  'nav': 3000,
+  'dropdown': 2250,
+  'breadcrumb': 2000,
+  'spinner-absolute': 1000,
+  'default': 1,
+  'below': -1
+);
+
+$animation-in-out-quadratic: cubic-bezier(0.46, 0.03, 0.52, 0.96);

@@ -1,0 +1,82 @@
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin vertical-align($display: 'block') {
+  align-items: center;
+  @if $display == 'inline' {
+    display: inline-flex;
+  } @else {
+    display: flex;
+  }
+}
+
+@mixin monospace {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+  line-height: 22px;
+  word-wrap: normal;
+  white-space: pre;
+}
+
+// Set this class on elements that may contain long unbroken strings of text
+@mixin dont-break-out {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+}
+
+@mixin button-context($bg-color: inherit, $color: inherit, $fadeOnHover: true) {
+  background-color: $bg-color;
+  color: $color;
+
+  svg {
+    fill: $color;
+  }
+
+  @if $fadeOnHover {
+    @media (hover: hover) {
+      transition-property: background-color, color, opacity, border-color;
+      transition-duration: .15s;
+      transition-timing-function: ease-in-out;
+
+      &:hover {
+        background-color: darken($bg-color, 15%);
+        opacity: .9;
+      }
+    }
+  }
+
+  // Disabled
+  &[disabled],
+  &:disabled,
+  &.disabled {
+    cursor: not-allowed;
+    opacity: .65;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $bg-color;
+        color: $color;
+      }
+    }
+  }
+
+}
+
+// https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+@mixin word-wrap() {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}

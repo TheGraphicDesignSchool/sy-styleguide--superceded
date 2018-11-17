@@ -1,0 +1,199 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/mixins';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/functions';
+@mixin inline-edit-button($fill) {
+  cursor: pointer;
+  fill: $fill;
+  height: 100%;
+  margin-left: 7px;
+  position: relative;
+  width: 12px;
+}
+
+.inline-edit-wrapper {
+  position: relative;
+  > .inline-edit-wrapper-inner {
+    align-items: center;
+    display: flex;
+    height: 19px;
+  }
+
+  .inline-text-overflow-wrapper {
+    height: 19px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-flex;
+    padding-right: 50px;
+    position: relative;
+    max-width: calc(100% - 50px);
+    align-items: center;
+
+    &:not(.visible) {
+      margin-top: 1px;
+      overflow: hidden;
+    }
+  }
+
+  .inline-text-wrapper {
+    color: $navy-text;
+    max-width: 100%;
+    min-width: 50px;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 1px dashed transparent;
+  }
+
+  .inline-text-wrapper-hover {
+    color: $navy-text;
+    max-width: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px dashed transparent;
+  }
+
+  &:not(.readonly) .inline-text-wrapper-hover:hover {
+    cursor: pointer;
+    border-bottom: 1px dashed $neutral-4;
+  }
+
+  &.readonly .inline-text-wrapper-hover:hover {
+    cursor: not-allowed;
+  }
+
+  &.error .inline-text-wrapper-hover {
+    border-bottom: 1px solid $red;
+    &:hover {
+      border-bottom: 1px dashed $red;
+    }
+  }
+
+  &.placeholder .inline-text-wrapper-hover {
+    opacity: 0.5;
+  }
+
+  .inline-button-wrapper {
+    float: left;
+    height: 100%;
+    margin-left: 2px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .copy-icon {
+    color: $primary-1;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px;
+    height: 19px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    &.copied {
+      opacity: 1;
+    }
+    > svg {
+      margin-top: -2px;
+    }
+  }
+
+  &:hover .copy-icon:not(.disabled) {
+    transition: opacity .25s ease-in;
+    opacity: 1;
+  }
+
+  .loader-wrapper {
+    position: absolute;
+    margin-left: 5px;
+    width: 27px;
+    height: 7px;
+    top: 6px;
+    right: 12px;
+
+    span[class^="spinner-bounce-"] > span {
+      span[class^="bounce1-"],
+      span[class^="bounce2-"],
+      span[class^="bounce3-"] {
+        width: 7px;
+        height: 7px;
+      }
+    }
+  }
+
+  .error-text {
+    color: $red;
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 3px;
+  }
+
+  .save-button {
+    @include inline-edit-button($green);
+  }
+
+  .cancel-button {
+    @include inline-edit-button($red);
+  }
+
+  .inline-icon {
+    display: flex;
+    margin: 0 5px 0 0;
+    min-width: 14px;
+  }
+
+  .inline-label {
+    margin: 0 10px 0 0;
+    color: rgba($navy-text, 0.5);
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 1px;
+  }
+
+  .value-tooltip {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .inline-edit-select {
+    z-index: 1;
+    > [class^='selectfield-value'] {
+      border: none;
+      padding: 0;
+      color: $navy-text;
+    }
+    svg:last-of-type {
+      display: none;
+      fill: $navy-text;
+      right: -20px;
+    }
+    ul {
+      min-width: 120px;
+      width: auto;
+    }
+
+    &:hover:not(.loading):not([class*='selectfield-disabled']), &[class*='active']:not(.loading):not([class*='selectfield-disabled']) {
+      svg:last-of-type {
+        display: block;
+      }
+    }
+    &[class*='selectfield-disabled'] {
+      > [class^='selectfield-value'] {
+        background-color: $white;
+        color: $navy-text;
+      }
+    }
+  }
+}

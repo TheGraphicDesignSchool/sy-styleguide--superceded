@@ -1,9 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Loader from 'react-loader'
 import style from './style.scss'
+
 import optclass, { mapOptClass } from '../internal/OptClass'
 import colors from '../internal/colors'
+
+const log = console.log
 
 const Button = props => {
   const collapseClass = props.collapse ? 'collapse' : null
@@ -72,80 +74,6 @@ const Button = props => {
       <em>{props.children}</em>
     </button>
   )
-}
-
-Button.defaultProps = {
-  type: 'button'
-}
-
-Button.propTypes = {
-  /**
-   * The size of button.
-   */
-  size: PropTypes.string,
-  /**
-   * Whether the button is disabled.
-   */
-  disabled: PropTypes.bool,
-  /**
-   * Whether the loading spinner is displayed.
-   */
-  loading: PropTypes.bool,
-  /**
-   * Whether to display only an icon on small screens
-   */
-  collapse: PropTypes.bool,
-  /**
-   * Optional CSS class(es) to be used for local styles (string or array of strings)
-   */
-  optClass: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.string
-  ]),
-  /**
-   * A function to be called onClick
-   */
-  onClick: PropTypes.func,
-  /**
-   * A function to be called onMouseEnter
-   */
-  onMouseEnter: PropTypes.func,
-  /**
-   * A function to be called onMouseLeave
-   */
-  onMouseLeave: PropTypes.func,
-  /**
-   * A function to be called onMouseDown
-   */
-  onMouseDown: PropTypes.func,
-  /**
-   * A function to be called onMouseOut
-   */
-  onMouseOut: PropTypes.func,
-  /**
-   * A function to be called onMouseOver
-   */
-  onMouseOver: PropTypes.func,
-  /**
-   * A function to be called onMouseUp
-   */
-  onMouseUp: PropTypes.func,
-  /**
-   * The type of button.
-   */
-  type: PropTypes.string,
-  /**
-   * A string to allow for inline styles
-   */
-  style: PropTypes.string,
-  /**
-   * A class name to be used for local styles or integrations (required to support styled-components)
-   **/
-  className: PropTypes.string,
-  /**
-   * A valid css color to set the color of the loader (if applicable).
-   **/
-  loaderColor: PropTypes.string
 }
 
 export default Button

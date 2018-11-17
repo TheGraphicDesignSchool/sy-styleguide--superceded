@@ -1,0 +1,91 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/functions';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/screen';
+
+.alert {
+  display: flex;
+  padding: 7px 10px;
+  border-radius: 4px;
+	background-color: $white;
+  color: $primary-4;
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 200;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  position: relative;
+  > div {
+    margin-left: 10px;
+  }
+  > svg {
+    margin-top: 1px;
+    min-width: 17px;
+  }
+  &.success {
+    svg {
+      fill: $success;
+    }
+  }
+  &.warning {
+    svg {
+      fill: $warning;
+    }
+  }
+  &.info {
+    svg {
+      fill: $info;
+    }
+  }
+  &.danger {
+    svg {
+      fill: $danger;
+    }
+  }
+  .close-icon {
+    cursor: pointer;
+    height: 15px;
+    margin: 0;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    svg {
+      margin-top: 0;
+      fill: $neutral-4;
+    }
+  }
+}
+
+.alert-system.slide-in-right {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: z('alert');
+
+  .alert {
+    animation: slideInRight .75s ease-out;
+    animation-iteration-count: 1;
+    margin-left: 30px;
+    max-width: 350px;
+
+    div:last-child {
+      margin-right: 20px;
+    }
+  }
+
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translate3d(3000px, 0, 0);
+    }
+
+    80% {
+      opacity: 1;
+      transform: translate3d(-25px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+}

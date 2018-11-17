@@ -1,0 +1,94 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/screen';
+
+.datepicker-component {
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $navy-text;
+    font-weight: 200;
+  }
+
+  .datepicker > div {
+    &:first-of-type {
+      width: 70px;
+      > div {
+        border-radius: 3px 0 0 3px;
+
+        @media #{$media-small-minus} {
+          border-radius: 3px 3px 0 0;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      width: 60px;
+      margin-left: -2px;
+      > div {
+        border-radius: 0;
+      }
+
+      @media #{$media-small-minus} {
+        margin-top: -2px;
+        margin-left: 0;
+      }
+    }
+    &:nth-of-type(3) {
+      width: 75px;
+      margin-left: -2px;
+      > div {
+        border-radius: 0 3px 3px 0;
+
+        @media #{$media-small-minus} {
+          border-radius: 0 0 3px 3px;
+        }
+      }
+
+      @media #{$media-small-minus} {
+        margin-top: -2px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  // this allows the 'selected' border
+  // to display all the way around the field
+  // when active
+  [class^='selectfield-component'] {
+    &[class*='active'] {
+      [class^='selectfield-value'] {
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.datepicker-component.inline-small-screen {
+  @media #{$media-small-minus} {
+    min-width: auto;
+  }
+
+  .datepicker > div {
+    @media #{$media-small-minus} {
+      min-width: auto;
+    }
+    &:first-of-type {
+      > div {
+        @media #{$media-small-minus} {
+          border-radius: 3px 0 0 3px;
+        }
+      }
+    }
+    &:nth-of-type(2) {
+      margin-left: -2px;
+    }
+    &:nth-of-type(3) {
+      > div {
+        @media #{$media-small-minus} {
+          margin-left: -2px;
+          border-radius: 0 3px 3px 0;
+        }
+      }
+    }
+  }
+}

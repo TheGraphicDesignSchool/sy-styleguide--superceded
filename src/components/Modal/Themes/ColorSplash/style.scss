@@ -1,0 +1,109 @@
+@import '../../../../../../../Downloads/react-ions-master/src/styles/common/colors';
+
+.color-splash {
+
+  [class^='modal-content'] {
+    padding: 0;
+    max-width: 688px;
+
+    [class^='modal-header'] {
+      [class^='header-wrapper'] {
+        align-items: center;
+        min-height: 76px;
+        border-radius: 3px 3px 0 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $primary-1;
+        padding: 24px;
+        margin: 0;
+
+        [class^='modal-close'] {
+          top: -4px;
+          position: relative;
+        }
+      }
+
+      [class^='header-content'] {
+        > h1 {
+          color: $white;
+          margin: 0;
+        }
+
+        h1, p {
+          color: $white;
+        }
+      }
+
+      [class^='modal-close'] {
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+
+    [class^='modal-body'] {
+      background-color: $neutral-2;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 16px;
+    }
+
+    [class^='modal-footer'] {
+      background-color: $white;
+      border-radius: 0 0 3px 3px;
+      box-sizing: border-box;
+      box-shadow: 0 -1px 0 0 $neutral-3;
+      display: flex;
+      justify-content: flex-end;
+      padding: 24px;
+
+      [class^='modal-actions'] {
+        float: none;
+        margin: 0;
+
+        [class*='action-item-wrap'] {
+          > button {
+            margin-left: 0;
+          }
+
+          [class*='popover-wrapper'] button {
+            margin: 0 0 16px;
+
+            &:last-child {
+              margin: 0;
+            }
+          }
+        }
+
+        > span:last-child {
+          display: inline-block;
+          margin-left: 12px;
+          > button:last-child {
+            margin-left: 0;
+            padding: 0;
+            > * {
+              padding: 8px;
+            }
+          }
+        }
+      }
+
+      &:empty {
+        display: none;
+      }
+    }
+
+    .modal-tab-content {
+      background-color: $white;
+      border-radius: 3px;
+      padding: 24px;
+
+      label {
+        font-size: 15px;
+      }
+    }
+  }
+}

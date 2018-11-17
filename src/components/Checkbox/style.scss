@@ -1,0 +1,164 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+
+.checkbox-component {
+  cursor: pointer;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  > input {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+  }
+
+  &:not(.checkbox-error) {
+    > input:focus + div .checkbox-input,
+    > input:active + div .checkbox-input {
+      border-color: rgba($neutral-4, .6);
+    }
+  }
+
+  > input:checked + div .checkbox-input {
+    svg {
+      display: block;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  > div {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    &.label-group {
+      align-items: inherit;
+    }
+
+    .checkbox-input {
+      align-items: center;
+      background-color: $white;
+      border: solid 2px $neutral-3;
+      border-radius: 3px;
+      display: flex;
+      flex-shrink: 0;
+      height: 14px;
+      justify-content: center;
+      transition: border-color ease-in-out .15s;
+      width: 14px;
+
+      svg {
+        display: none;
+      }
+    }
+
+    .label-wrapper {
+      display: flex;
+
+      .label-title {
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 18px;
+      }
+
+      .label-description {
+        display: block;
+        line-height: 22px;
+        opacity: 0.85;
+        margin-bottom: -4px;
+        margin-top: 8px;
+      }
+    }
+
+    label {
+      color: $navy-text;
+      font-size: 14px;
+      margin-left: 10px;
+      margin-top: 1px;
+    }
+
+  }
+
+  &.checkbox-error {
+    > div .checkbox-input {
+      border-color: $danger;
+    }
+  }
+
+  &.checkbox-disabled {
+    cursor: not-allowed;
+
+    > input {
+      cursor: not-allowed;
+    }
+
+    > div {
+      label {
+        color: $neutral-3;
+      }
+
+      .checkbox-input {
+        background-color: $neutral-3;
+        border-color: $neutral-3;
+
+        &:before {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+  &.checkbox-native {
+    align-items: baseline;
+    display: flex;
+    overflow: visible;
+
+    // Overrides to allow for Checkbox block to use
+    // native checkbox, as opposed to the "stylized" checkbox
+    // as used throughout the app
+    > div [class^='checkbox-input'] {
+      display: none;
+    }
+
+    .label-wrapper {
+      width: 100%;
+    }
+
+    > div label {
+      cursor: pointer;
+      margin-left: 8px;
+      margin-top: 0;
+      position: relative;
+      top: -2px;
+      width: 100%;
+    }
+
+    > input {
+      opacity: 1;
+      height: auto;
+      position: static;
+      width: auto;
+    }
+
+    &.has-description > input {
+      top: -14px;
+    }
+  }
+
+  &:hover {
+    .checkbox-input {
+      border-color: rgba($neutral-4, .4);
+    }
+  }
+}

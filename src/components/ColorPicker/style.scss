@@ -1,0 +1,42 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+
+.colorpicker-component {
+
+  position: relative;
+
+  input {
+    padding-left: 44px !important;
+  }
+
+  .color-preview {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 22px;
+    height: 22px;
+    border-radius: 2px;
+    transform: translate(0, -50%);
+    &.empty {
+      width: 22px;
+      height: 22px;
+      border: 1px solid $neutral-3;
+    }
+  }
+
+  .sketch-container {
+    margin-top: 5px;
+    position: absolute;
+    z-index: 1;
+
+    // Override SketchPicker style to match input style
+    > div:nth-of-type(1) {
+      padding: 10px 10px 6px !important;
+      box-shadow: none !important;
+      border: 1px solid $neutral-3 !important;
+      border-radius: 2px !important;
+      div:nth-of-type(3), div:nth-of-type(4) {
+        display: none;
+      }
+    }
+  }
+}

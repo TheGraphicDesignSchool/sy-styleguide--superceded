@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image-based Avatar should shallow render with image-related props 1`] = `
+<div
+  className="avatar-wrapper test"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "height": "100px",
+      "width": "100px",
+    }
+  }
+>
+  <img
+    alt="Cat"
+    height="100"
+    onLoad={[Function]}
+    src="https://ambassador-api.s3.amazonaws.com/uploads/avatars/1088_2016_05_04_12_16_49.jpg"
+  />
+</div>
+`;
+
+exports[`Letter-based avatar should shallow render with letter-related properties 1`] = `
+<div
+  className="avatar-wrapper loaded test"
+  style={
+    Object {
+      "backgroundColor": "#8b0000",
+      "height": "100px",
+      "width": "100px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#8b0000",
+        "height": "100px",
+        "width": "100px",
+      }
+    }
+  >
+    <span
+      style={
+        Object {
+          "fontSize": "60px",
+        }
+      }
+    >
+      cf
+    </span>
+  </div>
+</div>
+`;

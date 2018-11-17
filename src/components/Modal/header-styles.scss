@@ -1,0 +1,32 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+
+.header-wrapper {
+  align-items: center;
+  min-height: 72px;
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% + 48px);
+  box-sizing: border-box;
+  padding: 8px 24px;
+  margin: -24px -24px 0;
+
+  .header-content {
+    > h1 {
+      color: $navy-text;
+      font-size: 22px;
+      margin: 0 !important;
+    }
+
+    p {
+      color: $navy-text;
+      margin: 10px 0 0;
+    }
+  }
+
+  .modal-close {
+    svg {
+      cursor: pointer;
+    }
+  }
+}

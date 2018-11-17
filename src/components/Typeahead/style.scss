@@ -1,0 +1,69 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/screen';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/mixins';
+
+.typeahead-component {
+  position: relative;
+
+  label {
+    color: $navy-text;
+    display: block;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 10px;
+  }
+
+  .typeahead-list {
+    background-color: $white;
+    border: 2px solid $neutral-1;
+    border-radius: 0 0 3px 3px;
+    border-top: 0;
+    color: $primary-4;
+    list-style-type: none;
+    margin: 0;
+    max-height: 300px;
+    overflow: auto;
+    padding: 0;
+    position: absolute;
+    width: calc(100% - 2px);
+    z-index: 1;
+
+    li {
+      border-bottom: 1px solid $neutral-1;
+      cursor: pointer;
+      padding: 10px;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      &:hover {
+        background-color: $primary-1;
+        color: $white;
+      }
+    }
+  }
+
+  .input-wrapper {
+    position: relative;
+  }
+}
+
+.loader {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+}
+
+.reset-button {
+  background-color: $neutral-4;
+  border-radius: 50%;
+  cursor: pointer;
+  fill: $white;
+  height: 11px;
+  padding: 3px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 10px;
+}

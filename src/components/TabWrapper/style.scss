@@ -1,0 +1,116 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../../../../Downloads/react-ions-master/src/styles/common/screen';
+
+.tab-wrapper {
+  position: relative;
+  z-index: 1;
+
+  .tabs-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -1px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tab-panels {
+    > div {
+      box-sizing: border-box;
+    }
+  }
+
+  &.secondary {
+    .tabs-list {
+      box-shadow: inset 0 -1px 0 0 $neutral-1;
+      margin-bottom: 0;
+    }
+
+    .tab {
+      border: none;
+      box-shadow: inset 0 -1px 0 0 $neutral-1;
+      box-sizing: border-box;
+      color: rgba($primary-4_5, .8);
+      font-size: 14px;
+      padding: 16px 0;
+      margin: 0 16px;
+
+      &.active {
+        color: $primary-4;
+        background-color: $white;
+        border-bottom: 2px solid $primary-1;
+        box-shadow: none;
+        padding-bottom: 13px;
+      }
+
+      + .tab {
+        margin-left: 16px;
+
+        @media #{$media-tiny} {
+          margin-left: 0;
+        }
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:hover {
+        color: rgba($primary-4_5, 1);
+      }
+
+      @media #{$media-tiny} {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.tab {
+  background-color: $white;
+  border-color: $neutral-3;
+  border-style: solid;
+  border-width: 1px;
+  color: $neutral-4;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 200;
+  padding: 12px 15px;
+  user-select: none;
+
+  > span {
+    font-weight: normal;
+  }
+
+  + .tab {
+    margin-left: -1px;
+
+    &.active {
+      border-left: none;
+      margin-left: 0;
+    }
+
+    @media #{$media-tiny} {
+      margin-left: 0;
+    }
+  }
+
+  &.active {
+    color: $navy-text;
+    background-color: $neutral-2;
+    border-bottom: 1px solid $neutral-2;
+
+    > span {
+      color: $neutral-4;
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+  }
+
+  @media #{$media-tiny} {
+    margin: 0;
+    width: 100%;
+  }
+}

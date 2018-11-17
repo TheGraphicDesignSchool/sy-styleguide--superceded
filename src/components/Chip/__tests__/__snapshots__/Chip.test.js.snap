@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Chip should render with a className 1`] = `
+<span
+  className="chip-wrapper primary classy-class"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with a larger size 1`] = `
+<span
+  className="chip-wrapper primary larger"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with a smaller size 1`] = `
+<span
+  className="chip-wrapper primary smaller"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with a style object 1`] = `
+<span
+  className="chip-wrapper primary smaller"
+  style={
+    Object {
+      "marginRight": "4px",
+    }
+  }
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with text 1`] = `
+<span
+  className="chip-wrapper primary"
+>
+  <span>
+    text
+  </span>
+</span>
+`;
+
+exports[`Chip should render with the danger color 1`] = `
+<span
+  className="chip-wrapper danger"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the info color 1`] = `
+<span
+  className="chip-wrapper info"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the neutral-1 color 1`] = `
+<span
+  className="chip-wrapper neutral-1"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the neutral-2 color 1`] = `
+<span
+  className="chip-wrapper neutral-2"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the neutral-3 color 1`] = `
+<span
+  className="chip-wrapper neutral-3"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the neutral-4 color 1`] = `
+<span
+  className="chip-wrapper neutral-4"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the primary color 1`] = `
+<span
+  className="chip-wrapper primary"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the primary-1 color 1`] = `
+<span
+  className="chip-wrapper primary-1"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the primary-2 color 1`] = `
+<span
+  className="chip-wrapper primary-2"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the primary-3 color 1`] = `
+<span
+  className="chip-wrapper primary-3"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the primary-4 color 1`] = `
+<span
+  className="chip-wrapper primary-4"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the primary-5 color 1`] = `
+<span
+  className="chip-wrapper primary-5"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the primary-6 color 1`] = `
+<span
+  className="chip-wrapper primary-6"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the primary-darker color 1`] = `
+<span
+  className="chip-wrapper primary-darker"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the success color 1`] = `
+<span
+  className="chip-wrapper success"
+>
+  <span />
+</span>
+`;
+
+exports[`Chip should render with the warning color 1`] = `
+<span
+  className="chip-wrapper warning"
+>
+  <span />
+</span>
+`;

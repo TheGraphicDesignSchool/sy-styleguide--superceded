@@ -1,0 +1,89 @@
+@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+
+.button-toggle-component {
+  cursor: pointer;
+  position: relative;
+  > input {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &.button-toggle-disabled {
+    cursor: not-allowed;
+    > input {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.button-group {
+  .options {
+    display: flex;
+    .button-toggle-component {
+      button {
+        margin: 0;
+      }
+      &:first-child button {
+        border-right: none;
+        border-radius: 3px 0 0 3px;
+      }
+      &:last-child button {
+        border-left: none;
+        border-radius: 0 3px 3px 0;
+      }
+      &:not(.active) + .button-toggle-component:not(.active) {
+        margin-left: 1px;
+        &:before {
+          content: "";
+          position: absolute;
+          height: 100%;
+          width: 1px;
+          background-color: $neutral-3;
+          top: 0;
+          left: -1px;
+          z-index: 1;
+        }
+      }
+      + .button-toggle-component {
+        &:not(:last-child) button {
+          border-radius: 0;
+          border-right: none;
+          border-left: none;
+        }
+      }
+      &.active {
+        button {
+          padding-right: 9px;
+          padding-left: 9px;
+        }
+        &:first-child button {
+          padding-right: 9px;
+          padding-left: 8px;
+        }
+        &:last-child button {
+          padding-right: 8px;
+          padding-left: 9px;
+        }
+      }
+    }
+  }
+  > .asterisk {
+    color: $danger;
+    float: left;
+    margin-right: 5px;
+  }
+  > label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: $navy-text;
+    font-weight: 200;
+  }
+}
