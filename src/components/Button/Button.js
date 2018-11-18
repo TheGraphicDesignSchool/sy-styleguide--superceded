@@ -48,6 +48,7 @@ const Button = props => {
     }
   })
 
+    log(styles)
   const spinnerOptions = {
     lines: 10,
     length: 4,
@@ -55,6 +56,7 @@ const Button = props => {
     radius: 5,
     color: props.loaderColor || styles.color
   }
+
 
   return (
     <button

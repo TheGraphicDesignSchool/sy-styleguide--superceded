@@ -1,0 +1,15 @@
+.popover-wrapper {
+  h1 {
+    margin: 0 0 16px;
+  }
+}
+
+.popover-btn {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -5,19 +5,21 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "classnames": "^2.2.6",
     "node-sass": "^4.10.0",
-    "react": "16.6.1",
-    "react-dom": "16.6.1",
-    "react-ions": "5.1.29-rc.1",
+    "react": "next",
+    "react-dom": "next",
+    "react-loader": "^2.4.5",
     "react-scripts": "2.1.1",
-    "styled-components": "4.0.3"
+    "styled-components": "^4.1.1"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "PORT=4444 react-scripts start",
+    "start": "PORT=4224 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "update": "npm-check -u ; rm package-lock.json ; yarn --ignore-engines"
   },
   "browserslist": [
     ">0.2%",
