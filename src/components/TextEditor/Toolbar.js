@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import MergeTags from './MergeTags'
 import style from './style.scss'
-import '../../../../../Downloads/react-ions-master/src/styles/global/quill.scss'
+import '../../styles/global/quill.scss'
 
 /**
  * The Toolbar for the TextEditor component.

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import optclass from './OptClass'
-import Button from '../../../../../Downloads/react-ions-master/src/components/Button/index'
+import Button from '../../components/Button/index'
 import colors from './colors'
 
 const ConfirmationOverlay = ({ prompt, handleConfirmation }) => {

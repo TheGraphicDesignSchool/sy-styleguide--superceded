@@ -1,6 +1,6 @@
 import { keyframes } from 'styled-components'
-import colors from '../../../../../Downloads/react-ions-master/src/styles/common/colors.css'
-import { zLayers } from '../../../../../Downloads/react-ions-master/src/styles/common/functions.css'
+import colors from '../../styles/common/colors.css'
+import { zLayers } from '../../styles/common/functions.css'
 
 const dotsRotate = keyframes`
   100% {

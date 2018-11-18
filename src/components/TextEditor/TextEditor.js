@@ -4,7 +4,7 @@ import classNames from 'classnames/bind'
 import Quill from 'quill'
 import Toolbar from './Toolbar'
 import style from './style.scss'
-import '../../../../../Downloads/react-ions-master/src/styles/global/quill.scss'
+import '../../styles/global/quill.scss'
 
 /**
  * The TextEditor component.

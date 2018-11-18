@@ -1,5 +1,5 @@
-import colors from '../../../../../Downloads/react-ions-master/src/styles/common/colors.css'
-import { zLayers } from '../../../../../Downloads/react-ions-master/src/styles/common/functions.css'
+import colors from '../../styles/common/colors.css'
+import { zLayers } from '../../styles/common/functions.css'
 
 // TODO: Write test(s) for any logic contained herein
 const styles = ({ listItems, alignment, optClass, isOpened, triggerRect = { width: 0 } }) => {

@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
 import style from './style.scss'
 
@@ -50,50 +49,6 @@ const Radio = props => {
       </div>
     </div>
   )
-}
-
-Radio.defaultProps = {
-  checked: false,
-  disabled: false
-}
-
-Radio.propTypes = {
-  /**
-   * True if the option is checked.
-   */
-  checked: PropTypes.bool,
-  /**
-   * Whether the option is disabled.
-   */
-  disabled: PropTypes.bool,
-  /**
-   * Text shown next to the radio input element.
-   */
-  label: PropTypes.string,
-  /**
-   * Value of the option.
-   */
-  value: PropTypes.string,
-  /**
-   * Optional styles to add to the radio component.
-   */
-  optClass: PropTypes.string,
-  /**
-   * Name specified in the RadioGroup component.
-   */
-  name: PropTypes.string,
-  /**
-   * A callback function (from RadioGroup) to be called when the option is changed.
-   */
-  changeCallback: PropTypes.func,
-  /**
-   * An optional string that appears below the label
-   */
-  description: PropTypes.string,
-  /**
-   * An optional string that inlines a style tag with `width='<STRING>'`
-   */
-  width: PropTypes.string
 }
 
 export default Radio

@@ -1,5 +1,5 @@
-@import '../../../../../Downloads/react-ions-master/src/styles/common/mixins';
-@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
+@import '../../styles/common/mixins';
+@import '../../styles/common/colors';
 
 .badge {
   @include vertical-align($display: 'inline');

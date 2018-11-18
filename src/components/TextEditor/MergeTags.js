@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import Dropdown from '../Dropdown/index'
 import style from './style.scss'
-import '../../../../../Downloads/react-ions-master/src/styles/global/quill.scss'
+import '../../styles/global/quill.scss'
 
 /**
  * The MergeTags component.

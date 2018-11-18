@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import enhanceWithClickOutside from 'react-click-outside'
-import Button from '../../../../../Downloads/react-ions-master/src/components/Button/Button'
+import Button from '../../components/Button/Button'
 import StyledDiv from '../StyledDiv/index'
 import styles from './styles.css'
 

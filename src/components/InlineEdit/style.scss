@@ -1,6 +1,6 @@
-@import '../../../../../Downloads/react-ions-master/src/styles/common/mixins';
-@import '../../../../../Downloads/react-ions-master/src/styles/common/colors';
-@import '../../../../../Downloads/react-ions-master/src/styles/common/functions';
+@import '../../styles/common/mixins';
+@import '../../styles/common/colors';
+@import '../../styles/common/functions';
 @mixin inline-edit-button($fill) {
   cursor: pointer;
   fill: $fill;

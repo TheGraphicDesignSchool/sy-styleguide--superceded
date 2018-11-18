@@ -49,6 +49,7 @@ const Button = props => {
   })
 
     log(styles)
+
   const spinnerOptions = {
     lines: 10,
     length: 4,
