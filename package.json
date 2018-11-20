@@ -37,7 +37,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "update": "npm-check -u ; rm package-lock.json ; yarn --ignore-engines"
+    "update": "npm-check -u ; rm package-lock.json ; yarn --ignore-engines",
+    "style-start": "npx styleguidist server",
+    "style-build": "npx styleguidist build"
   },
   "browserslist": [
     ">0.2%",
