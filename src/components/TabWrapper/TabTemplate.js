@@ -2,9 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 class TabTemplate extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     children: PropTypes.node,

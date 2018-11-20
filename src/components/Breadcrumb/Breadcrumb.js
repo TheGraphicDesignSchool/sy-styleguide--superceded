@@ -8,9 +8,6 @@ import Icon from '../Icon/index'
 import style from './style.scss'
 
 class Breadcrumb extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     /**

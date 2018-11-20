@@ -7,9 +7,6 @@ import style from './style.scss'
  * The Textarea component.
  */
 class Textarea extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   state = {
     value: this.props.value
@@ -97,7 +94,7 @@ class Textarea extends React.Component {
   }
 
   render() {
-    const { disabled, label, value, optClass, className } = this.props
+    const { disabled, label, optClass, className } = this.props
 
     const cx = classNames.bind(style)
     var disabledClass = disabled ? style['textarea-disabled'] : ''

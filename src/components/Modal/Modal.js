@@ -11,9 +11,6 @@ import Icon from '../Icon/index'
  * The Modal component.
  */
 class Modal extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static defaultProps = {
     open: false,

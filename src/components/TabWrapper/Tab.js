@@ -4,9 +4,6 @@ import style from './style.scss'
 import classNames from 'classnames/bind'
 
 class Tab extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static defaultProps = {
   }

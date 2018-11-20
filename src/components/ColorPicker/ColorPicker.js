@@ -15,7 +15,7 @@ export class ColorPicker extends React.Component {
   constructor(props) {
     super(props)
 
-    this.throttle = throttle((fn: any, data: any) => {
+    this.throttle = throttle((fn, data) => {
       fn(data)
     }, 200)
   }

@@ -4,9 +4,6 @@ import optclass from '../internal/OptClass'
 import style from './style.scss'
 
 class PanelContent extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     const panelContentClasses = optclass(style, 'panel-content', this.props.optClass)

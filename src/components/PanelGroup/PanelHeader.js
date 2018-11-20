@@ -5,9 +5,6 @@ import Icon from '../Icon/index'
 import style from './style.scss'
 
 class PanelHeader extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     /**

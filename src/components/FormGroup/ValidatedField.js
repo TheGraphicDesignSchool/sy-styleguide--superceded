@@ -1,5 +1,5 @@
 import React from 'react'
-import { array, object, string } from 'prop-types'
+import { string } from 'prop-types'
 import optclass from '../internal/OptClass'
 import style from './style.scss'
 

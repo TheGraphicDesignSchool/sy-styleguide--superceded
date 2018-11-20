@@ -1,15 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import SortableItem from './SortableItem'
+
 import Badge from '../Badge/index'
 import Toggle from '../Toggle/index'
 import classNames from 'classnames/bind'
 import style from './style.scss'
 
 class SortableItemPreview extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     item: PropTypes.object.isRequired,

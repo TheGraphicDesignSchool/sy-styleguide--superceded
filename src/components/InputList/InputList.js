@@ -7,9 +7,6 @@ import TagList from '../internal/TagList'
 import style from './style.scss'
 
 class InputList extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     /**

@@ -6,9 +6,6 @@ import style from './style.scss'
 import Icon from '../Icon/index'
 
 export class SelectField extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static defaultProps = {
     disabled: false,
@@ -132,7 +129,7 @@ export class SelectField extends React.Component {
   getIndex = (value, options) => {
     let optionIndex = -1
 
-    options.map((option, index) => {
+    options.forEach((option, index) => {
       if (option[this.props.valueProp] === value) {
         optionIndex = index
       }

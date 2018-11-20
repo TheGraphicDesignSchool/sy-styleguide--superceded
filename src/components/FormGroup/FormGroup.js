@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import debounce from 'lodash/debounce'
 import { validate } from '../../utilities/validation'
 import { formSchemaToKeyVal } from '../../utilities/form'
-import { is, Iterable, fromJS, List, Map } from 'immutable'
+import { is, Iterable, fromJS, Map } from 'immutable'
 import style from './style.scss'
 import optclass from '../internal/OptClass'
 

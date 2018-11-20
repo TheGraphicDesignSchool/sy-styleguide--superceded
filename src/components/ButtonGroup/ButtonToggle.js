@@ -8,9 +8,6 @@ import Button from '../Button/Button'
  * The ButtonToggle component.
  */
 class ButtonToggle extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static defaultProps = {
     checked: false,

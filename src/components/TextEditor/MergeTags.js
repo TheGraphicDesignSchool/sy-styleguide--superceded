@@ -8,9 +8,6 @@ import '../../styles/global/quill.scss'
  * The MergeTags component.
  */
 class MergeTags extends PureComponent {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     /**

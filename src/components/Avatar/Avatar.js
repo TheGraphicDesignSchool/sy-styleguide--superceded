@@ -4,9 +4,6 @@ import style from './style.scss'
 import classNames from 'classnames/bind'
 
 class Avatar extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   state = {
     // If image src was passed in, it is not yet loaded

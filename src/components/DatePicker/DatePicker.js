@@ -10,9 +10,6 @@ import DateHelper from './DateHelper'
  * The DatePicker component.
  */
 class DatePicker extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   _dateHelper = this.props.dateHelper ? this.props.dateHelper : DateHelper
 

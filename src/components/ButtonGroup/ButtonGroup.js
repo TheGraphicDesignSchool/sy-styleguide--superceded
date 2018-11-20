@@ -8,9 +8,6 @@ import style from './style.scss'
  * The ButtonGroup component.
  */
 class ButtonGroup extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   state = {
     checkedOption: this.props.defaultOption !== undefined ? this.props.options[this.props.defaultOption][this.props.valueProp] : ''

@@ -3,15 +3,12 @@ import PropTypes from 'prop-types'
 import style from './style.scss'
 import classNames from 'classnames/bind'
 import Popover from '../Popover/Popover'
-import Button from '../Button/index'
+
 import Spinner from '../Spinner/index'
 import ConfirmationOverlay from '../internal/ConfirmationOverlay'
 import colors from '../internal/colors'
 
 class Toggle extends PureComponent {
-  constructor(props) {
-    super(props)
-  }
 
   static defaultProps = {
     disabled: false,

@@ -4,9 +4,6 @@ import optclass from '../internal/OptClass'
 import style from './style.scss'
 
 class PanelGroup extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     /**

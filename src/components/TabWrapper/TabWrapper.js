@@ -5,9 +5,7 @@ import style from './style.scss'
 import classNames from 'classnames/bind'
 
 class TabWrapper extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+
 
   static defaultProps = {
     initialSelectedIndex: 0
@@ -42,7 +40,7 @@ class TabWrapper extends React.Component {
   }
 
   componentWillMount = () => {
-    this.getTabs().map((tab, index) => {
+    this.getTabs().forEach((tab, index) => {
       if (tab.props.active) {
         this.setState({selectedIndex: index})
       }

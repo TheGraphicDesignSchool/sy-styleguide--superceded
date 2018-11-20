@@ -13,7 +13,7 @@ function getItemStyles(props) {
     }
   }
 
-  let { x, y } = currentOffset
+  let { y } = currentOffset
 
   const transform = `translate(0px, ${y - props.dimensions.top - 10}px)`
 
@@ -25,9 +25,6 @@ function getItemStyles(props) {
 }
 
 class CustomDragLayer extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     item: PropTypes.object,

@@ -9,9 +9,7 @@ import style from './style.scss'
  * The FileUpload component.
  */
 class FileUpload extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+
 
   state = {
     value: this.props.value,

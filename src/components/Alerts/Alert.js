@@ -5,9 +5,6 @@ import classNames from 'classnames/bind'
 import Icon from '../Icon/index'
 
 class Alert extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   state = {
     timerStart: 0,

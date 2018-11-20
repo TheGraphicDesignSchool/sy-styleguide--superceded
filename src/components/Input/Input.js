@@ -7,9 +7,6 @@ import style from './style.scss'
  * The Input component.
  */
 class Input extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static defaultProps = {
     disabled: false,

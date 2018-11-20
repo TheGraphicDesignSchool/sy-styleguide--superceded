@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+
 import { Link } from 'react-router-dom'
 import Icon from '../Icon/index'
 import style from './style.scss'
@@ -26,7 +26,7 @@ const Node = props => {
       {props.node.name}
     </a>
   } else if (typeof props.node.action === 'function') {
-    link = <a onClick={handleClick}>
+    link = <a onClick={handleClick} href='#'>
       {iconParent ? <Icon name={iconParent} fill='currentColor' /> : null}
       {props.node.name}
     </a>

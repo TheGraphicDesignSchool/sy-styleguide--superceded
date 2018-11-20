@@ -1,16 +1,13 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import MergeTags from './MergeTags'
-import style from './style.scss'
+
 import '../../styles/global/quill.scss'
 
 /**
  * The Toolbar for the TextEditor component.
  */
 class Toolbar extends PureComponent {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     /**

@@ -5,9 +5,6 @@ import classNames from 'classnames/bind'
 import Icon from '../Icon/index'
 
 class Checkbox extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static defaultProps = {
     disabled: false,

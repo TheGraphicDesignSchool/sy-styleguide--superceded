@@ -5,9 +5,6 @@ import Radio from './Radio'
 import style from './style.scss'
 
 class RadioGroup extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   state = {
     value: this.props.value,
@@ -99,7 +96,7 @@ class RadioGroup extends React.Component {
   getIndex = (value, options) => {
     let optionIndex = -1
 
-    options.map((radio, index) => {
+    options.forEach((radio, index) => {
       if (radio.value === value) {
         optionIndex = index
         return

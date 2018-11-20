@@ -36,7 +36,7 @@ class AlertSystem extends React.Component {
   removeAlert = alert => {
     let alerts = this.state.alerts
 
-    alerts.map((a, index) => {
+    alerts.forEach((a, index) => {
       if (alert.key === a.key) {
         a.hidden = true
 
@@ -52,7 +52,7 @@ class AlertSystem extends React.Component {
   componentWillReceiveProps = nextProps => {
     let alerts = nextProps.alerts
 
-    alerts.map((alert, index) => {
+    alerts.forEach((alert, index) => {
       if (!alert.key) {
         alert.key = (alert.type || 'success') + '-' + new Date().getTime()
       }

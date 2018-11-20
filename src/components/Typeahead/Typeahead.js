@@ -180,7 +180,7 @@ export class Typeahead extends React.Component {
   getIndex = (value, options) => {
     let optionIndex = -1
 
-    options.map((option, index) => {
+    options.forEach((option, index) => {
       if (option[this.props.valueProp] === value) {
         optionIndex = index
       }

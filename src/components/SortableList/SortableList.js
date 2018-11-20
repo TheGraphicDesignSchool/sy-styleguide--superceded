@@ -8,9 +8,6 @@ import CustomDragLayer from './CustomDragLayer'
 import style from './style.scss'
 
 export class SortableList extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     /**

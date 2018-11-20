@@ -9,9 +9,6 @@ import Tooltip from '../Tooltip/index'
 import SelectField from '../SelectField/index'
 
 class InlineEdit extends React.Component {
-  constructor(props) {
-    super(props)
-  }
 
   static propTypes = {
     /**

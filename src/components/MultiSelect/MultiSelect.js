@@ -5,9 +5,7 @@ import TagList from '../internal/TagList'
 import style from './style.scss'
 
 class MultiSelect extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+
 
   static defaultProps = {
     disabled: false
@@ -83,7 +81,7 @@ class MultiSelect extends React.Component {
   getIndex = value => {
     let optionIndex = -1
 
-    this.props.options.map((option, index) => {
+    this.props.options.forEach((option, index) => {
       if (option[this.props.valueProp] === value) {
         optionIndex = index
       }

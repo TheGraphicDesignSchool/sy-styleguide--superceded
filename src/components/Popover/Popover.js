@@ -84,6 +84,7 @@ export class Popover extends Component {
       case 'right':
         if (this._boundingRect.right > window.innerWidth) return 'left'
         break
+      default: break;
     }
     return defaultPosition
   }
