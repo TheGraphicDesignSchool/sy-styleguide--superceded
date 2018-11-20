@@ -6,14 +6,32 @@
   "main": "src/index.js",
   "dependencies": {
     "classnames": "^2.2.6",
+    "clipboard": "^2.0.4",
+    "fuzzy": "^0.1.3",
+    "immutability-helper": "^2.8.1",
+    "immutable": "^4.0.0-rc.12",
+    "inline-style-prefixer": "^5.0.3",
+    "lodash": "^4.17.11",
+    "moment": "^2.22.2",
     "node-sass": "^4.10.0",
+    "prop-types": "^15.6.2",
+    "quill": "^1.3.6",
     "react": "next",
+    "react-click-outside": "^3.0.1",
+    "react-color": "^2.14.1",
+    "react-dnd": "^6.0.0",
+    "react-dnd-html5-backend": "^6.0.0",
     "react-dom": "next",
+    "react-dropzone": "^7.0.1",
     "react-loader": "^2.4.5",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "styled-components": "^4.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "react-styleguidist": "^8.0.5"
+  },
   "scripts": {
     "start": "PORT=4224 react-scripts start",
     "build": "react-scripts build",

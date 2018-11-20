@@ -1,4 +1,5 @@
-export Tab from './Tab'
-export TabWrapper from './TabWrapper'
+import Tab from './Tab'
+import TabWrapper from './TabWrapper'
 
-export default from './TabWrapper'
+export {Tab}
+export default TabWrapper

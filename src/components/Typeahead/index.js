@@ -1,2 +1,2 @@
-export default from './Typeahead'
-export Typeahead from './Typeahead'
+import Typeahead from './Typeahead'
+export default Typeahead

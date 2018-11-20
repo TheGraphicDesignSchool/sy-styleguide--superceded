@@ -1,1 +1,2 @@
-export default from './InlineEdit'
+import InlineEdit from './InlineEdit'
+export default InlineEdit

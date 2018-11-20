@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames/bind'
 import style from './style.scss'
-import Button from '../../components/Button/Button'
+import Button from '../Button/Button'
 
 /**
  * The ButtonToggle component.

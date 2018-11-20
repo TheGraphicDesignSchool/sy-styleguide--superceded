@@ -1,6 +1,7 @@
-export SortableList from './SortableList'
-export SortableItem from './SortableItem'
-export SortableItemPreview from './SortableItemPreview'
-export CustomDragLayer from './CustomDragLayer'
+import SortableList from './SortableList'
+import SortableItem from './SortableItem'
+import SortableItemPreview from './SortableItemPreview'
+import CustomDragLayer from './CustomDragLayer'
 
-export default from './SortableList'
+export {SortableItem,SortableItemPreview,CustomDragLayer}
+export default SortableList

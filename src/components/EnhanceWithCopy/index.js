@@ -1,1 +1,2 @@
-export default from './EnhanceWithCopy'
+import EnhanceWithCopy from './EnhanceWithCopy'
+export default EnhanceWithCopy

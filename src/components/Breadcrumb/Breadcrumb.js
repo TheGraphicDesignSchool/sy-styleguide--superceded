@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Immutable from 'immutable'
-import { Link } from 'react-router'
+import { Link } from 'react-router-dom'
 import InlineStylePrefixer from '../internal/InlineStylePrefixer'
 import optclass from '../internal/OptClass'
 import Icon from '../Icon/index'

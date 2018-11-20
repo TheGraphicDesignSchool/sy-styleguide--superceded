@@ -1,4 +1,4 @@
-export Alert from './Alert'
-export AlertSystem from './AlertSystem'
+import Alert from './Alert'
+import AlertSystem from './AlertSystem'
 
-export default from './Alert'
+export {Alert,AlertSystem}

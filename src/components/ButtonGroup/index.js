@@ -1,4 +1,6 @@
-export ButtonToggle from './ButtonToggle'
-export ButtonGroup from './ButtonGroup'
+import ButtonToggle from './ButtonToggle'
+import ButtonGroup from './ButtonGroup'
 
-export default from './ButtonGroup'
+export {ButtonToggle}
+
+export default ButtonGroup
