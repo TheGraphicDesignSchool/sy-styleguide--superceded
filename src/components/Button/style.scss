@@ -1,6 +1,6 @@
-@import '../../styles/common/mixins';
-@import '../../styles/common/colors';
-@import '../../styles/common/screen';
+@import '../../styles/common/mixins.scss';
+@import '../../styles/common/colors.scss';
+@import '../../styles/common/screen.scss';
 
 .btn {
   @include vertical-align('inline');

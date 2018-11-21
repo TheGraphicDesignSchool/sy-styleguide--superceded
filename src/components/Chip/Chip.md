@@ -1,5 +1,4 @@
 ### Default Chip
-
 ```jsx
 
 const inlineStyle = {
@@ -30,12 +29,24 @@ const chips = () => {
   })
 }
 
-const ExampleChipDefault = () => (
-  <React.Fragment>
-    {chips()}
-  </React.Fragment>
-)
 
-<ExampleChipDefault />
+<div>
+  {chips()}
+</div>
 
+```
+
+### Larger Chip
+```jsx
+<Chip text='Danger' size='larger' color='danger' />
+```
+
+### Smaller Chip
+```jsx
+<Chip text='High Contrast' size='smaller' color='neutral-1' />
+```
+
+### Chip with callback
+```jsx
+<Chip text='Upgrade now' size='smaller' color='neutral-1' clickCallback={() => alert('you clicked the chip')} />
 ```

@@ -12,6 +12,8 @@ const Button = props => {
     const loaderClasses = props.loading ? 'loading' : null
     const btnClasses = optclass(style, [style.btn, props.size, loaderClasses, collapseClass], props.optClass, props.className)
 
+    log(btnClasses)
+
     const styles = mapOptClass(props.optClass, {
         secondary: {
             color: colors.primary4
@@ -48,8 +50,6 @@ const Button = props => {
         }
     })
 
-    log(styles)
-
     const spinnerOptions = {
         lines: 10,
         length: 4,
@@ -57,7 +57,6 @@ const Button = props => {
         radius: 5,
         color: props.loaderColor || styles.color
     }
-
 
     return (
         <button
