@@ -30,6 +30,10 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@storybook/addon-actions": "^4.0.7",
+    "@storybook/react": "^4.0.7",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
     "react-styleguidist": "^8.0.5"
   },
   "scripts": {
@@ -38,6 +42,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "update": "npm-check -u ; rm package-lock.json ; yarn --ignore-engines",
+    "storybook": "start-storybook -p 9001 -c .storybook",
     "style-start": "npx styleguidist server",
     "style-build": "npx styleguidist build"
   },
